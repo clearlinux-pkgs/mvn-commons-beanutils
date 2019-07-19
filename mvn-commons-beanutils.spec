@@ -4,7 +4,7 @@
 #
 Name     : mvn-commons-beanutils
 Version  : 1.6
-Release  : 2
+Release  : 3
 URL      : https://repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.6/commons-beanutils-1.6.jar
 Source0  : https://repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.6/commons-beanutils-1.6.jar
 Source1  : https://repo1.maven.org/maven2/commons-beanutils/commons-beanutils-core/1.8.3/commons-beanutils-core-1.8.3.jar
@@ -14,6 +14,8 @@ Source4  : https://repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.
 Source5  : https://repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.pom
 Source6  : https://repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar
 Source7  : https://repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.pom
+Source8  : https://repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar
+Source9  : https://repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-1.1 Apache-2.0
@@ -36,28 +38,34 @@ data components for the mvn-commons-beanutils package.
 
 %install
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-beanutils/commons-beanutils/1.6
-cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/commons-beanutils/commons-beanutils/1.6
+cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/commons-beanutils/commons-beanutils/1.6/commons-beanutils-1.6.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.3
-cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.3
+cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.3/commons-beanutils-core-1.8.3.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.3
-cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.3
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.3/commons-beanutils-core-1.8.3.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-beanutils/commons-beanutils/1.6
-cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/commons-beanutils/commons-beanutils/1.6
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/commons-beanutils/commons-beanutils/1.6/commons-beanutils-1.6.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-beanutils/commons-beanutils/1.7.0
-cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/commons-beanutils/commons-beanutils/1.7.0
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-beanutils/commons-beanutils/1.7.0
-cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/commons-beanutils/commons-beanutils/1.7.0
+cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-beanutils/commons-beanutils/1.9.2
-cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/commons-beanutils/commons-beanutils/1.9.2
+cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-beanutils/commons-beanutils/1.9.2
-cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/commons-beanutils/commons-beanutils/1.9.2
+cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.pom
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-beanutils/commons-beanutils/1.9.3
+cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/commons-beanutils/commons-beanutils/1.9.3
+cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.pom
 
 
 %files
@@ -73,3 +81,5 @@ cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/commons-beanutils/commo
 /usr/share/java/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.pom
 /usr/share/java/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar
 /usr/share/java/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.pom
+/usr/share/java/.m2/repository/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar
+/usr/share/java/.m2/repository/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.pom
